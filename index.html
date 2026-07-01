@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌦 Weather Quiz App</h1>
+    <p>ApexPlanet Internship - Task 3</p>
+</header>
+
+<div class="container">
+
+    <!-- Weather Section -->
+
+    <section class="weather-section">
+
+        <h2>Weather Search</h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter City Name">
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+
+        </div>
+
+        <div id="weatherResult">
+
+            <h3>Weather Details</h3>
+
+            <p>
+                <strong>City :</strong>
+                <span id="cityName">--</span>
+            </p>
+
+            <p>
+                <strong>Temperature :</strong>
+                <span id="temperature">--</span>
+            </p>
+
+            <p>
+                <strong>Wind Speed :</strong>
+                <span id="windSpeed">--</span>
+            </p>
+
+            <p>
+                <strong>Weather :</strong>
+                <span id="weatherCondition">--</span>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Quiz Section -->
+
+    <section class="quiz-section">
+
+        <h2>JavaScript Quiz</h2>
+
+        <h3 id="question">
+            Question will appear here
+        </h3>
+
+        <div id="options">
+
+        </div>
+
+        <button onclick="nextQuestion()">
+            Next Question
+        </button>
+
+        <h2 id="score"></h2>
+
+    </section>
+
+</div>
+
+<footer>
+
+    <p>
+        © 2026 Weather Quiz App
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
